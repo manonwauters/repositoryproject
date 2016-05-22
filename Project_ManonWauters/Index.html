@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Voorstelling van Manon Wauters">
+	<meta name="keywords" content="trefwoorden, gescheiden, door, komma's">
+	<meta name="viewport" content="width=device-width, height=device-height" />
+	<title>Dagboek Project Manon Wauters</title>
+	<link rel="shortcut icon" href="Img/fav2.ico" />
+
+	<link rel="stylesheet" href="voorbeelden.css">
+
+	<script src="Js/jquery-1.12.1.js"></script>
+	<script src="js/jquery-1.12.1.min.js"></script>
+	<script src="js/java.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
+	</script>
+
+</head>
+
+<body>
+
+	<div data-role="page" id="login">
+		<div data-role="header" id="headerLogin">
+			<h1>Login</h1>
+		</div>
+		<div data-role="content" id="contentLogin">
+			<form name="login">
+				Username
+				<input type="text" name="userid" /> Wachtwoord
+				<input type="password" name="pswrd" />
+				<input type="button" onclick="check(this.form);" value="Login" />
+				<button type="reset">
+					Reset
+				</button>
+			</form>
+		</div>
+		<div data-role="footer" id="footer">
+			<p>&copy; Copyright by Manon Wauters</p>
+		</div>
+	</div>
+
+
+	<div data-role="page" id="site">
+		<div data-role="header" id="header">
+			<div>
+				<li>
+					<button id="index">
+						<span>Home</span>
+					</button>
+				</li>
+				<li>
+					<button id="new">
+						<span>Dagboek</span>
+					</button>
+				</li>
+				<li>
+					<button id="list">
+						<span>Lijst met dagboeken</span>
+					</button>
+				</li>
+			</div>
+		</div>
+		<div data-role="content" id="content">
+			<!----------------------- Home ------------------------->
+			<article>
+				<div id="home">
+					<h1 class="home">Welkom!</h1>
+					<p class="homep">
+						Wil jij ook je dagboek overal kunnen meenemen zonder dat iedereen er aan kan?
+						<br> Wij hebben de oplossing voor jouw probleem!
+						<br> Je kan alleen aan het dagboek als je de link hebt natuurlijk heb jij deze als enige.
+						<br> Met het wachtwoord en username, die jij op aanvraag hebt gemaakt door ons te contacteren is de toegang extra moeilijk voor hackers.
+						<br> Veel plezier met je nieuwe dagboek!
+						<br> PS: personaliseren van je dagboek kan nu ook naar deze <a id="slideHier" href="#aanpassen" data-transition="slide">link</a> te gaan .
+					</p>
+					<img class="foto" src="Img/homeAfbeelding.jpg" alt="Free your mind" />
+				</div>
+			</article>
+
+			<!----------------------- Dagboek ------------------------->
+			<article>
+				<div id="dagboek" style="display:none">
+					<h1 class="rest">Nieuw Dagboek!</h1>
+					<p class="restp">Vul maar in:</p>
+					<form action="#dairy">
+						<div id="invul">
+							<div>
+								<label for="titleDairy" id="invul">Title:</label>
+								<input type="text" id="titleDairy" required>
+
+								<br>
+
+								<label for="datumDairy" id="invul">Datum:</label>
+								<input type="date" id="datumDairy" required>
+
+								<br>
+
+								<label for="tekstDairy" id="invul">Inhoud dagboek:</label>
+								<br>
+								<textarea id="tekstDairy" required></textarea>
+
+								<br>
+
+								<button id="voegToe" type="submit">
+									Voeg Toe
+								</button>
+
+								<button type="reset">
+									Terugzetten
+								</button>
+
+							</div>
+					</form>
+					</div>
+				</div>
+			</article>
+
+			<!----------------------- Dagboeklijst ------------------------->
+			<article>
+				<div id="lijst" style="display:none">
+					<h1 class="rest">De lijst met al jouw dagboeken!</h1>
+					<p class="restp">
+						Voor hier je title van je dagboekpagina die je zoek in:
+						<br>(Hoofdlettergevoelig)
+						<input type="text" id="filter">
+					</p>
+					<div id="dairy">
+						<div>
+							<table id="dairyTabelDB">
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Datum</th>
+										<th>Tekst</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+
+		<!----------------------- Footer ------------------------->
+		<div data-role="footer" id="footer">
+			<p>&copy; Copyright by Manon Wauters</p>
+		</div>
+	</div>
+
+
+
+	<!----------------------- Aanpassen ------------------------->
+
+	<div data-role="page" id="aanpassen">
+		<div data-role="header" id="headerAanpassen">
+			<h1>Wil je zelf kunnen personaliseren?</h1>
+		</div>
+		<div data-role="content" id="contentAanpassen">
+			<p class="restp">
+				Om het dagboek zo goed mogelijk aan jouw smaak aan te passen, kan je het vanaf nu ook personaliseren.
+				<br> Zo is het dagboek even uniek als jij bent!
+			</p>
+			
+			<div>
+				<p class="restp">Wat voor lettertype zou je willen:</p>
+				<button id="Rome">Times New Roman</button>
+				<button id="Comic">Comic Sans MS</button>
+				<button id="Verdana">Verdana</button>
+				<button id="Fb">Californian FB</button>
+				<button id="Ss">Segoe Script</button>
+			</div>
+			
+			<div>
+				<p class="restp">Wil je een andere achtergrond?</p>
+				<img id="foto1" src="Img/home1.jpg">
+				<img id="foto2" src="Img/home2.jpg">
+				<img id="foto3" src="Img/home3.jpg">
+				<img id="foto4" src="Img/homeAfbeelding7.jpg">
+				<img id="foto5" src="Img/homeAfbeelding8.jpg">
+			</div>
+			
+			<p class="restp">
+				Ben je klaar? Dan mag je <a id="slideHier" href="#site" data-transition="slide">terug</a> naar het hoofdmenu.
+			</p>
+
+			<img class="foto" src="Img/2.jpg" alt="Be who you are, not who the world wants you to be."/>
+			
+		</div>
+		<div data-role="footer" id="footer">
+			<p>&copy; Copyright by Manon Wauters</p>
+		</div>
+
+</body>
+
+</html>

@@ -1,0 +1,356 @@
+/* ----------------------------------- Overal ------------------------------------ */
+
+#footer{
+	background-color: rgb(245, 222, 179);
+	width: 100%;
+	position:fixed;
+   	bottom:0;
+	border-top-width: 2px;
+	border-top-color: black;
+	border-top-style: solid;
+	margin-top: 20px;
+}
+p{
+	font-family: Verdana;
+}
+h1{
+	font-family: Verdana;
+}
+button{
+	font-family: Verdana;
+}
+th{
+	font-family: Verdana;
+}
+lable{
+	font-family: Verdana;
+}
+td{
+	font-family: Verdana;
+}
+
+/* ------------------------------------ Login ------------------------------------ */
+
+#login{
+	background-color: #F5DEB3;
+	background-image: url(Img/resize-img.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0;
+}
+
+#headerLogin{
+	background-color: papayawhip;
+	width: 80%;
+	font-size: 120%;
+	border-color: black;
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 0.5em;
+	margin-right: auto;
+	margin-left: auto;
+	
+
+}
+
+#contentLogin{
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	padding: 0.5em;
+	background-color: rgba(245, 222, 179, 0.8);
+	border-radius: 0.5em;
+	width: 50%;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 1%;
+
+}
+
+
+/* ------------------------------------ Site ------------------------------------ */
+
+#site{
+	background-color: #F5DEB3;
+	background-image: url(Img/resize-img.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0;
+	height: 100vh;
+	
+}
+#content{
+	margin-bottom: 60px;
+}
+
+#slideHier{
+	color: black;
+	font-weight: normal;
+}
+
+
+
+
+/* --------------------------- Header --------------------------*/
+
+#header {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#header li {
+	list-style: none;
+	width: calc(100% / 3);
+	float: left;
+}
+
+#header button {
+	background-color: papayawhip;
+	color: black;
+	display: inline-block;
+	border: 2px solid black;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	width: 100%;
+	text-align: center;
+	font-size: 120%;
+	transition-duration: 0.4s;
+	margin-top: 0;
+}
+
+/*  W3school.com als bron */
+
+#header button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+#header button span:after {
+	content: '»';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+#header button:hover span {
+	padding-right: 25px;
+}
+
+#header button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+
+/* --------------------------- Body --------------------------*/
+
+
+/* ------- Lettertype (ook gebruikt bij aanpassen)------*/
+
+.home{
+	margin-top: 30px;
+	font-size: 200%;
+}
+
+.rest{
+	margin-top: 30px;
+	font-size: 180%;
+}
+
+p.homep{
+	font-size: 150%;
+}
+
+p.restp{
+	font-size: 130%;
+}
+
+#dairyTabelDB{
+	font-size: 120%;
+}
+
+#invul{
+	font-size: 110%;
+}
+
+/* ------------------ Home --------------*/
+
+#home{
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	padding: 0.5em;
+	background-color: rgba(245, 222, 179, 0.8);
+	border-radius: 0.5em;
+	width: 80%;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+/* ------------------ Dagboek --------------*/
+#dagboek{
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	padding: 0.5em;
+	background-color: rgba(245, 222, 179, 0.8);
+	border-radius: 0.5em;
+	width: 80%;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* --- Form ---*/
+input {
+    width: 100%;
+}
+
+textarea{
+	width: 100%;
+}
+
+
+
+/* ------------------ Lijst --------------*/
+#lijst{
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	padding: 0.5em;
+	background-color: rgba(245, 222, 179, 0.8);
+	border-radius: 0.5em;
+	width: 80%;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#link{
+	color: black;
+}
+
+#scroll{
+    max-height: 220px;
+}
+
+#grote{
+	width: 200px;
+}
+
+
+/* ------------------ Foto --------------*/
+
+.foto{
+	margin-top: 30px;
+	margin-bottom: 50px;
+	border-style:groove;
+	border-width: medium;
+	border-color: black;
+	border-radius: 8px;
+	max-width: 100%;
+}
+
+
+/* ------------------------------------ Aanpassen ------------------------------------ */
+
+#aanpassen{
+	background-color: #F5DEB3;
+	background-image: url(Img/resize-img.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0;
+}
+
+#headerAanpassen{
+	background-color: papayawhip;
+	width: 80%;
+	font-size: 150%;
+	border-color: black;
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 0.5em;
+	margin-right: auto;
+	margin-left: auto;
+	
+
+}
+
+#contentAanpassen{
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	padding: 0.5em;
+	background-color: rgba(245, 222, 179, 0.8);
+	border-radius: 0.5em;
+	width: 50%;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 1%;
+}
+
+#foto1{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-style:groove;
+	border-width: medium;
+	border-color: black;
+	border-radius: 8px;
+	max-width: 100%;
+}
+
+#foto2{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-style:groove;
+	border-width: medium;
+	border-color: black;
+	border-radius: 8px;
+	max-width: 100%;
+}
+
+#foto3{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-style:groove;
+	border-width: medium;
+	border-color: black;
+	border-radius: 8px;
+	max-width: 100%;
+}
+
+#foto4{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-style:groove;
+	border-width: medium;
+	border-color: black;
+	border-radius: 8px;
+	max-width: 100%;
+}
+
+#foto5{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-style:groove;
+	border-width: medium;
+	border-color: black;
+	border-radius: 8px;
+	max-width: 100%;
+}
